@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <style>
+    body {
+      align-items: center;
+      text-align: center;
+      font-family: "Noto Sans", sans-serif;
+    }
+    .button {
+      background-color: #1f64e4;
+      border-width: 2px;
+      border-color: white;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    .button5 {
+      border-radius: 100%;
+    }
+    body {
+      background: #1e5799;
+      background: -moz-linear-gradient(
+        45deg,
+        #1e5799 0%,
+        #2989d8 21%,
+        #207cca 70%,
+        #7db9e8 100%
+      );
+      background: -webkit-linear-gradient(
+        45deg,
+        #1e5799 0%,
+        #2989d8 21%,
+        #207cca 70%,
+        #7db9e8 100%
+      );
+      background: linear-gradient(
+        45deg,
+        #1e5799 0%,
+        #2989d8 21%,
+        #207cca 70%,
+        #7db9e8 100%
+      );
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 );
+    }
+  </style>
+  <body>
+    <h1>
+      Get Data from
+      <a
+        href="http://127.0.0.1:5000/get-data"
+        target="_blank"
+        rel="noopener noreferrer"
+        >"http://127.0.0.1:5000/get-data"</a
+      >
+      .
+    </h1>
+    <div>
+      <button class="button button5" onclick="reload()">
+        <i class="fa fa-refresh" style="font-size: 36px"></i>
+      </button>
+      <p>Refresh Data</p>
+    </div>
+    <iframe
+      src="http://127.0.0.1:5000/get-data"
+      frameborder="0"
+      height="700px"
+      ,
+      width="700px"
+    ></iframe>
+    <h1>
+      Add Data To
+      <a
+        href="http://127.0.0.1:5000/get-data"
+        target="_blank"
+        rel="noopener noreferrer"
+        >http://127.0.0.1:5000/get-data</a
+      >
+      as POST method.
+    </h1>
+    <h2 style="text-align: right">
+      Made By
+      <a href="http://abujuni.dev" target="_blank" rel="noopener noreferrer"
+        >Junaid</a
+      >
+      .
+    </h2>
+    <script>
+      function reload() {
+        open("/", "_self");
+      }
+    </script>
+  </body>
+</html>
